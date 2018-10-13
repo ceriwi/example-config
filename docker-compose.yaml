@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  myceriwi:
+    container_name: myceriwi
+    image: ceriwi/ceriwi-crawler:v0.1.0
+    ports:
+      - 80:80
+    environment:
+      DB_URL: dbmysql
+      DB_NAME: mycrawler
+      DB_USER_NAME: root
+      DB_USER_PASSWORD: myScreetIsScreet
+    depends_on:
+      - dbmysql
+
+  dbmysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: myScreetIsScreet
+      MYSQL_DATABASE: mycrawler
+
+  chrome:
+    image: selenium/standalone-chrome
+    volumes:
+      - /dev/shm:/dev/shm
