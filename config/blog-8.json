@@ -1,0 +1,36 @@
+{   
+    "source": {
+        "name":"demo get data blog part 8",
+        "url":"https://test.ceriwi.com/rule1/index.html?page=5#coba",
+        "remove-query": true,
+        "remove-fragment": true
+    },
+    "data": {
+        "class":[
+            {
+                "name":"blog-main",
+                "index":0,
+                "child": {
+                    "attrib":[
+                        {
+                            "name":"class",
+                            "value":"blog-post-title",
+                            "alias":"title",
+                            "index":0
+                        },
+                        {
+                            "name":"class",
+                            "value":"col-md-8 blog-content",
+                            "alias":"content",
+                            "index":0
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "dataRebuild":{
+        "title":"fix",
+        "content":""
+    }
+}

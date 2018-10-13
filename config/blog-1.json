@@ -1,0 +1,18 @@
+{   
+    "source": {
+        "name":"demo get data blog part 1",
+        "url":"https://test.ceriwi.com/rule1/index.html?page=5#coba"
+    },
+    "data": {
+        "class":[
+            {
+                "name":"blog-post-title",
+                "index":0
+            },
+            {
+                "name":"blog-content",
+                "index":0
+            }
+        ]
+    }
+}

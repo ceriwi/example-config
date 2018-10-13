@@ -1,0 +1,61 @@
+{   
+    "source": {
+        "name":"demo get product part 4",
+        "url":"https://test.ceriwi.com/rule3/index.html",
+        "remove-query":true
+    },
+    "data": {
+        "class":[
+            {
+                "name":"kategori-wrapper",
+                "child":{
+                    "class":[
+                        {
+                            "name":"text-dark kategori",
+                            "alias":"kategori",
+                            "index":0,
+                            "remove": {
+                                "pattern":[
+                                    {"pattern":"#kategori : #i"}
+                                ]
+                            }
+                        },
+                        {
+                            "name":"col-sm-4",
+                            "child":{
+                                "class":[
+                                    {
+                                        "name":"card-header",
+                                        "alias":"nama produk",
+                                        "index":0
+                                    }
+                                ],
+                                "tag":[
+                                    {
+                                        "name":"p",
+                                        "alias":"harga",
+                                        "index":0
+                                    }
+                                ],
+                                "attrib":[
+                                    {
+                                        "name":"class",
+                                        "value":"diskon",
+                                        "index":0
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "dataRebuild": {
+        "kategori":"fix",
+        "nama produk":"",
+        "harga":"",
+        "diskon":"optional"
+    },
+    "dataType":"multi"
+}

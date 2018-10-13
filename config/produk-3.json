@@ -1,0 +1,44 @@
+{   
+    "source": {
+        "name":"demo get product part 3",
+        "url":"https://test.ceriwi.com/rule2/index.html",
+        "remove-query":true
+    },
+    "data": {
+        "class":[
+            {
+                "name":"col-sm-4",
+                "alias": "card wrapper",
+                "child":{
+                    "class":[
+                        {
+                            "name":"card-header",
+                            "alias":"nama produk",
+                            "index":0
+                        }
+                    ],
+                    "tag":[
+                        {
+                            "name":"p",
+                            "alias":"harga",
+                            "index":0
+                        }
+                    ],
+                    "attrib":[
+                        {
+                            "name":"class",
+                            "value":"diskon",
+                            "index":0
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "dataRebuild": {
+        "nama produk":"",
+        "harga":"",
+        "diskon":"optional"
+    },
+    "dataType":"multi"
+}

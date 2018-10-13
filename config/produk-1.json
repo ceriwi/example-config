@@ -1,0 +1,33 @@
+{   
+    "source": {
+        "name":"demo get product part 1",
+        "url":"https://test.ceriwi.com/rule2/index.html",
+        "remove-query":true
+    },
+    "data": {
+        "xpath":[
+            {
+                "name":"//div[@class='card']",
+                "alias": "card",
+                "child":{
+                    "class":[
+                        {
+                            "name":"card-header",
+                            "alias":"nama produk",
+                            "index":0
+                        },
+                        {
+                            "name":"harga",
+                            "index":0
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "dataRebuild": {
+        "nama produk":"",
+        "harga":""
+    },
+    "dataType":"multi"
+}
