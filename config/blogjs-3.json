@@ -1,0 +1,43 @@
+{   
+    "source": {
+        "name":"demo get data blogjs part 3",
+        "url":"http://myceriwi/test/rule4/index.html",
+        "remove-query": true,
+        "remove-fragment": true,
+        "limit": {
+            "time": 1,
+            "urls": 1,
+            "sleep": 1
+        },
+        "browser": {
+            "name" : "chrome",
+            "host" : "http://chrome:4444/wd/hub"
+        }
+    },
+    "data": {
+        "class":[
+            {
+                "name":"blog-main",
+                "index":0,
+                "child": {
+                    "xpath":[
+                        {
+                            "name":"//h2[contains(@class, 'blog-post-title')]",
+                            "alias":"title",
+                            "index":0
+                        },
+                        {
+                            "name":"//div[contains(@class,'blog-content')]",
+                            "alias":"content",
+                            "index":0
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "dataRebuild":{
+        "title":"fix",
+        "content":""
+    }
+}
