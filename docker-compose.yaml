@@ -3,7 +3,7 @@ version: '3'
 services:
   myceriwi:
     container_name: myceriwi
-    image: ceriwi/ceriwi-crawler:v0.1.2
+    image: ceriwi/ceriwi-crawler:v0.1.3
     ports:
       - 80:80
     environment:
