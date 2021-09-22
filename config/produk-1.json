@@ -1,7 +1,7 @@
 {   
     "source": {
         "name":"demo get product part 1",
-        "url":"https://test.ceriwi.com/rule2/index.html",
+        "url":"https://ceriwi.github.io/test/rule2/index.html",
         "remove-query":true
     },
     "data": {

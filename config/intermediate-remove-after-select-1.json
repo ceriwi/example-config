@@ -1,0 +1,30 @@
+{   
+    "source": {
+        "name":"demo get data by tag remove-after-select and download file",
+        "url":"https://ceriwi.github.io/test/intermediate/index.html",
+        "remove-fragment": true,
+        "browser": {
+            "name" : "chrome",
+            "host" : "http://chrome:4444/wd/hub"
+        }
+    },
+    "data": {
+        "tag":[
+            {
+                "name":"a",
+                "alias":"link",
+                "attrib":"href",
+                "type": "url",
+                "remove-after-select": {
+                    "pattern":[
+                        {"pattern":"#^(?!https://ceriwi.github.io/test/intermediate/img/).*$#i"}
+                    ]
+                }
+            }
+        ]
+    },
+    "dataRebuild":{
+        "link":""
+    },
+    "dataType":"multi"
+}

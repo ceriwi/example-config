@@ -1,7 +1,7 @@
 {   
     "source": {
         "name":"demo get data blogjs part 4",
-        "url":"http://test.ceriwi.com/rule4/index.html",
+        "url":"https://ceriwi.github.io/test/rule4/index.html",
         "remove-query": true,
         "remove-fragment": true,
         "browser": {

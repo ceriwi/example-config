@@ -1,0 +1,30 @@
+{   
+    "source": {
+        "name":"demo get data by attrib remove-after-select and download file",
+        "url":"https://ceriwi.github.io/test/intermediate/index.html",
+        "remove-fragment": true,
+        "browser": {
+            "name" : "chrome",
+            "host" : "http://chrome:4444/wd/hub"
+        }
+    },
+    "data": {
+        "attrib":[
+            {
+                "name":"class",
+                "value":"link-example",
+                "alias":"link",
+                "type": "url",
+                "remove-after-select": {
+                    "pattern":[
+                        {"pattern":"#^(?!https://ceriwi.github.io/test/intermediate/pdf/).*$#i"}
+                    ]
+                }
+            }
+        ]
+    },
+    "dataRebuild":{
+        "link":""
+    },
+    "dataType":"multi"
+}

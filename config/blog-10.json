@@ -1,7 +1,7 @@
 {   
     "source": {
         "name":"demo get data blog part 10",
-        "url":"https://test.ceriwi.com/rule1/index.html?page=5#coba",
+        "url":"https://ceriwi.github.io/test/rule1/index.html?page=5#coba",
         "remove-query": true,
         "remove-fragment": true
     },
