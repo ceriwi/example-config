@@ -1,0 +1,35 @@
+{
+    "source": {
+        "name":"demo filter 1 exclude-pattern and get data remove-after-select",
+        "url":"https://ceriwi.github.io/test/intermediate/index.html",
+        "remove-fragment":true,
+        "filters":{
+            "exclude-pattern":[
+                "#^(?!https://ceriwi.github.io/test/intermediate/index.html).*#"
+            ]
+        },
+        "browser": {
+            "name" : "chrome",
+            "host" : "http://chrome:4444/wd/hub"
+        }
+    },
+    "data": {
+        "attrib":[
+            {
+                "name":"class",
+                "value":"link-example",
+                "alias":"link",
+                "type": "url",
+                "remove-after-select": {
+                    "pattern":[
+                        {"pattern":"#^(?!https://ceriwi.github.io/test/intermediate/img/).*$#i"}
+                    ]
+                }
+            }
+        ]
+    },
+    "dataRebuild":{
+        "link":""
+    },
+    "dataType":"multi"
+}
